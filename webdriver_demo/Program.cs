@@ -16,13 +16,6 @@ namespace webdriver_demo
     {
         static void Main(string[] args)
         {
-            ChromeOptions option = new ChromeOptions();
-            option.AddArgument("test-type");
-            string drivePath = (@"C:\testing\chrome\");
-            IWebDriver driver = new ChromeDriver(drivePath, option);
-            driver.Navigate().GoToUrl("http://www.google.com");
-            driver.FindElement(By.Id("lst-ib"));
-            driver.Close();
         }
     }
 }
